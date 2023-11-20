@@ -122,3 +122,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+
+// 회원가입
+function redirectToSignUp() {
+
+    window.location.href = 'signup.html';
+}
+

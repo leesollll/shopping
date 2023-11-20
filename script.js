@@ -98,3 +98,27 @@ function closeProductDetail() {
     detailOverlay.style.display = 'none';
     detailContainer.style.display = 'none';
 }
+// 상품 목록 생성 시 상세 정보를 보여주는 이벤트 추가
+document.addEventListener('DOMContentLoaded', function () {
+    const productList = document.getElementById('product-list');
+
+    // 각 상품에 클릭 이벤트 추가
+    productList.addEventListener('click', function (event) {
+        const clickedElement = event.target;
+
+        // 클릭된 요소가 상품 이미지인 경우 상세 정보 보기
+        if (clickedElement.tagName === 'IMG') {
+            const productElement = clickedElement.closest('.product');
+            const productIndex = Array.from(productElement.parentElement.children).indexOf(productElement);
+
+            // 예시로 사용할 상품 데이터
+            const exampleProducts = [
+                { title: '플로럴 프릴 드레스', image: 'dress1.jpg', price: 50.00, description: '아름다운 플로럴 프릴 드레스입니다.' },
+                // 다른 상품들도 유사하게 추가 가능
+            ];
+
+            const selectedProduct = exampleProducts[productIndex];
+            showProductDetail(selectedProduct);
+        }
+    });
+});

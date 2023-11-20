@@ -74,3 +74,27 @@ function checkout() {
         toggleLoginForm();
     }
 }
+
+function showProductDetail(product) {
+    const detailOverlay = document.getElementById('product-detail-overlay');
+    const detailContainer = document.getElementById('product-detail');
+
+    // 설정된 상품 정보로 화면 업데이트
+    document.getElementById('product-detail-title').textContent = product.title;
+    document.getElementById('product-detail-image').src = product.image;
+    document.getElementById('product-detail-price').textContent = `가격: $${product.price.toFixed(2)}`;
+    document.getElementById('product-detail-description').textContent = product.description;
+
+    // 화면 표시
+    detailOverlay.style.display = 'block';
+    detailContainer.style.display = 'block';
+}
+
+function closeProductDetail() {
+    const detailOverlay = document.getElementById('product-detail-overlay');
+    const detailContainer = document.getElementById('product-detail');
+
+    // 화면 닫기
+    detailOverlay.style.display = 'none';
+    detailContainer.style.display = 'none';
+}

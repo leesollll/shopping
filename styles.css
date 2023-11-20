@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #f5a3cc; /* 핑크색 배경 */
+    background-color: #FBEFFB; /* 핑크색 배경 */
     padding: 20px;
     text-align: center;
 }
@@ -51,7 +51,7 @@ cart-item {
     padding: 10px 0;
     
 button {
-    background-color: #ff69b4;
+    background-color: #F5A9F2;
     color: #fff;
     padding: 8px;
     border: none;

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여성 의류 쇼핑몰</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>여성 의류 쇼핑몰</h1>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <!-- 여성 의류 상품 목록 -->
+            <div class="product">
+                <img src="dress1.jpg" alt="드레스 1">
+                <h2>플로럴 프릴 드레스</h2>
+                <p class="price">$50.00</p>
+                <button onclick="addToCart('플로럴 프릴 드레스', 50.00)">장바구니에 추가</button>
+            </div>
+
+            <!-- 다른 상품들도 유사하게 추가 가능 -->
+        </section>
+
+        <section class="shopping-cart">
+            <!-- 장바구니 내용이 여기에 표시될 수 있음 -->
+            <h2>장바구니</h2>
+            <ul id="cart-items">
+                <!-- 여기에 장바구니 아이템이 추가됨 -->
+            </ul>
+            <p class="total">총합: $<span id="cart-total">0.00</span></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -129,6 +129,27 @@ document.addEventListener('DOMContentLoaded', function () {
 function redirectToSignUp() {
 
     window.location.href = 'signup.html';
+}// script.js
+
+const shoppingCart = document.getElementById('shopping-cart');
+
+function addToCart(productTitle, productPrice) {
+    // 장바구니에 상품 추가
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+        <p>${productTitle} - $${productPrice.toFixed(2)}</p>
+        <button onclick="removeFromCart(this)">삭제</button>
+    `;
+
+    shoppingCart.appendChild(cartItem);
 }
+
+function removeFromCart(button) {
+    // 장바구니에서 상품 삭제
+    const cartItem = button.closest('.cart-item');
+    cartItem.remove();
+}
+
 
 

@@ -57,3 +57,47 @@ button:hover {
     font-weight: bold;
     margin-top: 10px;
 }
+
+
+.shopping-cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 300px; /* 최대 너비 설정 */
+    overflow-y: auto; /* 내용이 넘칠 경우 스크롤바 표시 */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    max-width: 50px; /* 상품 이미지 크기 제한 */
+    margin-right: 10px;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+
+
+/* styles.css */
+
+/* 기존 스타일 생략 */
+
+body {
+    font-family: 'Arial', sans-serif; /* 변경할 글꼴 지정 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; /* 제목 글꼴 지정 */
+}
+
+p {
+    font-family: 'Verdana', sans-serif; /* 일반 텍스트 글꼴 지정 */
+}
+
+/* 기존 스타일 생략 */

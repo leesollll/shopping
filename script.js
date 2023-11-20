@@ -1,3 +1,65 @@
+
+// script.js
+
+// 장바구니 아이템을 저장할 배열
+const cartItems = [];
+
+// 장바구니에 상품 추가 함수
+function addToCart(productTitle, productPrice) {
+    const cartItem = {
+        title: productTitle,
+        price: productPrice
+    };
+
+    // 장바구니 아이템 배열에 추가
+    cartItems.push(cartItem);
+
+    // 장바구니 업데이트
+    updateCart();
+}
+
+// 장바구니 업데이트 함수
+function updateCart() {
+    const cartList = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+
+    // 장바구니 목록 초기화
+    cartList.innerHTML = '';
+
+    // 장바구니 아이템을 목록에 추가
+    cartItems.forEach(item => {
+        const cartItemElement = document.createElement('li');
+        cartItemElement.classList.add('cart-item');
+        cartItemElement.innerHTML = `
+            <span>${item.title} - ${item.price}원</span>
+            <button onclick="removeFromCart('${item.title}')">삭제</button>
+        `;
+
+        cartList.appendChild(cartItemElement);
+    });
+
+    // 총합 계산 및 표시
+    const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+    cartTotal.textContent = total;
+
+    // 여기에서 서버로 장바구니 정보를 전송하는 등의 추가 로직을 수행할 수 있습니다.
+}
+
+// 장바구니에서 상품 제거 함수
+function removeFromCart(productTitle) {
+    // 장바구니 아이템 배열에서 해당 상품 제거
+    const index = cartItems.findIndex(item => item.title === productTitle);
+    if (index !== -1) {
+        cartItems.splice(index, 1);
+    }
+
+    // 장바구니 업데이트
+    updateCart();
+}
+
+// 초기 로딩 시 장바구니 업데이트
+updateCart();
+
 // script.js
 
 let cartItems = [];

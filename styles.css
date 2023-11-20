@@ -8,7 +8,6 @@ body {
 header {
     background-color: #FBEFFB; /* 핑크색 배경 */
     padding: 20px;
-     font-size: 16px;
     text-align: center;
 }
 
@@ -46,7 +45,6 @@ main {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
-     font-size: 14px;
 }
 }
 cart-item {
@@ -55,7 +53,7 @@ cart-item {
     align-items: center;
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
-     font-size: 12px;
+
     
 button {
     background-color: #F5A9F2;

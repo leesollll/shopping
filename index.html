@@ -37,3 +37,32 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!-- 기존 코드 생략 -->
+
+<body>
+    <header>
+        <!-- 기존 코드 생략 -->
+        <div id="user-panel">
+            <span id="user-greeting">안녕하세요, 손님!</span>
+            <button onclick="toggleLoginForm()">로그인</button>
+        </div>
+    </header>
+
+    <main>
+    </main>
+
+    <div id="login-form-overlay" onclick="closeLoginForm()"></div>
+    <div id="login-form">
+        <h2>로그인</h2>
+        <form>
+            <label for="username">아이디:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" onclick="login()">로그인</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

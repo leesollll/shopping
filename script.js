@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // 예시로 사용할 상품 데이터
             const exampleProducts = [
-                { title: '플로럴 프릴 드레스', image: 'dress1.jpg', price: 50.00, description: '아름다운 플로럴 프릴 드레스입니다.' },
+                { title: '플로럴 프릴 드레스', image: '<a href="https://ibb.co/98PyvRC"><img src="https://i.ibb.co/98PyvRC/Kakao-Talk-20231120-200437603.jpg" alt="Kakao-Talk-20231120-200437603" border="0"></a>', price: 40000원, description: '살랑살랑 예쁜 드레스 입니다. 동남아 여행에 강추드려요 !' },
                 // 다른 상품들도 유사하게 추가 가능
             ];
 

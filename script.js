@@ -132,25 +132,3 @@ function redirectToSignUp() {
 }
 
 
-// 기존 코드 생략
-
-function addToCart(productTitle, productPrice) {
-    const cart = document.querySelector('.shopping-cart');
-
-    // 장바구니에 상품 추가
-    const cartItem = document.createElement('div');
-    cartItem.classList.add('cart-item');
-    cartItem.innerHTML = `
-        <img src="placeholder.jpg" alt="${productTitle} 이미지">
-        <div class="cart-item-info">
-            <p>${productTitle}</p>
-            <p>$${productPrice.toFixed(2)}</p>
-        </div>
-        <button onclick="removeFromCart(this)">삭제</button>
-    `;
-
-    cart.appendChild(cartItem);
-}
-
-// 기존 코드 생략
-

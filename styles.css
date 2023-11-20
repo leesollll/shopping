@@ -28,8 +28,12 @@ main {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    
 }
-
+.product h2 {
+    font-size: 14px; /* 적절한 크기로 조절 */
+    margin-top: 10px; /* 글씨체 크기를 줄일 경우 상단 여백 추가 */
+}
 .product img {
     max-width: 100%;
     height: auto;

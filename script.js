@@ -27,6 +27,8 @@ function updateCart() {
     totalElement.textContent = cartTotal.toFixed(2);
 }
 
+}
+
 let loggedInUser = null;
 
 function toggleLoginForm() {

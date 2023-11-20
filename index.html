@@ -66,3 +66,40 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+<body>
+    <header>
+        <!-- 기존 코드 생략 -->
+        <div id="user-panel">
+            <span id="user-greeting">안녕하세요, 손님!</span>
+            <button onclick="toggleLoginForm()">로그인</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-list" id="product-list">
+            <!-- 여성 의류 상품 목록 -->
+            <!-- 기존 코드 생략 -->
+        </section>
+
+        <section class="shopping-cart">
+            <!-- 기존 코드 생략 -->
+        </section>
+    </main>
+
+    <div id="login-form-overlay" onclick="closeLoginForm()"></div>
+    <div id="login-form">
+        <!-- 기존 코드 생략 -->
+    </div>
+
+    <div id="product-detail-overlay" onclick="closeProductDetail()"></div>
+    <div id="product-detail">
+        <h2 id="product-detail-title"></h2>
+        <img id="product-detail-image" alt="상품 이미지">
+        <p id="product-detail-price"></p>
+        <p id="product-detail-description"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
